@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int n,r,ans=0,t;
+clrscr();
+cout<<"enter a number : ";
+cin>>n;
+t=n;
+while(n>0)
+ {
+ r=n%10;
+ ans=ans+(r*r*r);
+ n=n/10;
+ }
+ if(t==ans)
+ cout<<"the number is armstrong";
+ else
+ cout<<"the number isn't armstrong";
+ getch();
+}
